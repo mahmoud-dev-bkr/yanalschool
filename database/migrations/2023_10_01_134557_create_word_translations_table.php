@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('word_translations', function (Blueprint $table) {
             $table->id();
             $table->string('locale');
-            $table->foreignId('word_id')->constrained('words')->onDelete('cascade');
-            $table->TolongText('value');
+            $table->foreignId('word_id')->constrained('words')->onDelete('cascade');            
+            $table->longText('value');
             $table->timestamps();
         });
     }

@@ -13,6 +13,8 @@
 <script src="{{ asset('front/js/viewer.js') }}"></script>
 
 <script src="{{ asset('front/js/jquery-viewer.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 @yield('js')
 <script>
 
@@ -105,3 +107,6 @@
             window.open(link, "_blank");
         }
     </script>
+<script>
+  new WOW().init();
+</script>

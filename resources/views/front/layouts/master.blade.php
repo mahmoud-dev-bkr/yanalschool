@@ -32,13 +32,14 @@
     </style>
      @include('front.layouts.css')
 
-     {!! getSettingValue('google_analytics') !!}
+     
 </head>
 <body class="{{ isRtl()?'rtl' :'ltr' }}">
 
 
     @include('front.layouts.header')
     @yield('content')
+    @include('front.layouts.contactUs')
     @include('front.layouts.footer')
 
     <!-- Back to Top -->

@@ -3,10 +3,9 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
-use App\Models\HowWork;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class CourseController extends Controller
 {
     public function index()
     {
@@ -15,10 +14,18 @@ class AboutController extends Controller
            // Set Meta Home
 
            metaGenerate($metaBanner);
-        return view('front.about.index',[
+        return view('front.courses.index',[
             'about' =>  \App\Models\About::first(),
             'metaBanner' => $metaBanner,
             'features' => \App\Models\Feature::get(),
         ]);
     }
+
+
+    public function show($id = null)
+    {
+        $course = null;
+        return view('front.courses.show', compact('course'));
+    }
+
 }

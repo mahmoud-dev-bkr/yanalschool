@@ -20,10 +20,13 @@ Route::get('/privacyPolicy', 'HomeController@terms')->name('front.home.privacypo
 Route::get('/clinic-location', 'HomeController@clinicLocation')->name('front.clinicLocation');
 
 Route::get('/about', 'AboutController@index')->name('front.about');
+// Route::get('/courses', 'CourseController@index')->name('front.course');
+Route::get('/courses/show', 'CourseController@show')->name('front.course.show');
 
 Route::get('/contact', 'ContactController@index')->name('front.contact');
 
 Route::get('/course', 'CourseController@index')->name('front.courses');
+Route::get('/course/show', 'CourseController@show')->name('front.courses.show');
 
 // Route::get('/projects', 'ProjectController@index')->name('front.project');
 // Route::get('/projects/{id}', 'ProjectController@show')->name('front.project.show');

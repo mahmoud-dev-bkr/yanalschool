@@ -1,5 +1,3 @@
-@extends('front.layouts.master')
-@section('css')
 <style>
 /* Contact Section */
 .contact-section {
@@ -8,7 +6,7 @@
 
 .about-title-wrapper {
     background-color: #f5f7fa; /* Light blue-gray background for the title only */
-    padding: 50px 0; /* Add padding to give the background some space around the title */
+    padding: 500px 0; /* Add padding to give the background some space around the title */
 }
 
 /* Title */
@@ -128,16 +126,13 @@
     }
 }
 </style>
-@endsection
-@section('content')
-
 
 <!-- Contact Section -->
-<section class="contact-section title-section">
-    <div class="about-title-wrapper text-center mb-5">
-        <h2 class="about-title">{{ __('Contact us') }}</h2>
-    </div>
-    <div class="container-fluid ">
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="about-title-wrapper text-center mb-5">
+            <h2 class="about-title">{{ __('Contact us') }}</h2>
+        </div>
         <div class="row justify-content-center">
             <div class="col-10">
                 <h3 class="contact-subtitle text-center mb-4">{{ __('Contact details') }}</h3>
@@ -177,7 +172,3 @@
         </div>
     </div>
 </section>
-@endsection
-@section('js')
-    
-@endsection

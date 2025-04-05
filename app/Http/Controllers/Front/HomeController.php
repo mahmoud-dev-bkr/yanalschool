@@ -19,7 +19,7 @@ class HomeController extends Controller
         // Set Meta Home
            metaGenerate($metaBanner);
 
-
+        // dd("dsadsa");
 
 
         return view('front.home.index', [

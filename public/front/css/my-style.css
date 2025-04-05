@@ -636,3 +636,11 @@ html {
     position: relative;
     height: 100%;
 }
+
+
+.title-section {
+    color: #403d39;
+    font-size: 4.5em;
+    font-weight: bold;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.15);
+}
